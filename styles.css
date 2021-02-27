@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #3d85b4;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f5f5;
+
+}
+
+iconify-icon{
+
+  font-size: 50px;
+}
+
+.exc-icon{
+  top: 70%;
+
+}
+
+.course-title {
+  text-align: center;
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  width: 100%;
+}
+.percentage-title{
+  text-align: center;
+  left: 0;
+  color:#c44343;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+}
+
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.iconify{
+
+  font-size: 50px;
+
+}
+
+.iconify strong{
+
+  font-size: 50px;
+
+}
+
+
+
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      overflow-x: hidden;
+  }
+  
+  .nav-links {
+      position: fixed;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #5D4954;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  
+  .nav-links li {
+      opacity: 0;
+  }
+  
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+.nav-active {
+      transform: translateX(0%);
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.icon-style {
+
+  display: flex;
+}
+
+
+.icon-style p {
+
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+
+
+
+
+.table-box
+{
+    margin: 20% auto;
+    
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 15px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+  background-color: #3d85b4;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+    
+}
+
+
+
+.speech {
+  position: absolute;
+  left: 0;
+  top: -10rem;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid rgb(187, 80, 80);
+ border-radius: 20px;
+border-radius: 20px;
+  border-radius:20px;
+  box-shadow: 2px 2px 4px #888;
+ box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  display: none;
+}
+
+.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: rgb(187, 80, 80) transparent transparent rgb(187, 80, 80);
+}
+
+.myDIV {
+  position: relative;
+  font-size: 15px;
+}
+
+.myDIV:hover .speech {
+  display: block;
+  color: rgb(13, 36, 167);
+}
+
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.last-cell{
+    border-right: none;
+  
+}
